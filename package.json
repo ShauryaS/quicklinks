@@ -1,19 +1,25 @@
 {
-  "name": "quicklinks",
+  "name": "quicklinks-gatsby",
+  "version": "1.0.0",
   "private": true,
+  "description": "quicklinks-gatsby",
+  "author": "ShauryaS",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "next": "12.0.10",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "eslint": "8.8.0",
-    "eslint-config-next": "12.0.10"
+    "babel-plugin-styled-components": "^2.0.2",
+    "gatsby": "^4.6.2",
+    "gatsby-plugin-styled-components": "^5.6.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.3.3"
   }
 }
