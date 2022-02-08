@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+#gatsby.js
+.cache/
+
 # production
 /build
 
