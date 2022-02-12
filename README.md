@@ -1,5 +1,6 @@
-# Quicklinks
-This open source project is an alternative to the popular Linktree. Quicklinks is a one-stop website template for people to have quick access to your other socials and important links. Made with Nextjs and containerized with Docker. Google analytics integration is available. 
+# Quicklinks-Next
+
+This open source project is an alternative to the popular Linktree. Quicklinks is a one-stop website template for people to have quick access to your other socials and important links. Made with Nextjs and containerized with Docker. Google analytics integration is available.
 
 ## Getting Started
 
@@ -13,7 +14,7 @@ git clone https://github.com/ShauryaS/quicklinks.git
 
 Option 2: Download this repository as a zip file.
 
-Option 3: Fork this repository and either clone the forked repository or download the forked repository as a zip. 
+Option 3: Fork this repository and either clone the forked repository or download the forked repository as a zip.
 
 Once you get the code on your machine, execute `git checkout quicklinks-next` to ensure you are viewing the Quicklinks code written in Nextjs.
 
@@ -122,8 +123,7 @@ To customize your Quicklinks page, edit the file `/{project_root}/src/data/quick
 "image": /images{your image name},
 ```
 
-Fill the value of the **name** key with your name and the value of the **image** key with the path pointing to your image. Place all images at the `/{project_root}/public/images` folder. 
-
+Fill the value of the **name** key with your name and the value of the **image** key with the path pointing to your image. Place all images at the `/{project_root}/public/images` folder.
 
 ### QuickLinks Data
 
@@ -138,11 +138,9 @@ Fill the value of the **name** key with your name and the value of the **image**
   ]
 ```
 
-Quicklinks data is an array of objects representing a link. Fill the value of the **name** key with the name of the link, the value of the **link** key with the url of the link, and the value of the **image** key with the path or url pointing to the icon for the link. 
+Quicklinks data is an array of objects representing a link. Fill the value of the **name** key with the name of the link, the value of the **link** key with the url of the link, and the value of the **image** key with the path or url pointing to the icon for the link.
 
-All icons for each link must be an SVG format. Place all SVG icons for each link at the `/{project_root}/public/icons` folder. 
-
-
+All icons for each link must be an SVG format. Place all SVG icons for each link at the `/{project_root}/public/icons` folder.
 
 ### Theme
 
@@ -152,26 +150,28 @@ All icons for each link must be an SVG format. Place all SVG icons for each link
 
 Fill the value of the **theme** key in the json with the name of the theme that should be applied to Quicklinks. The list of themes can be found in `/{project_root}/src/styles/themes/themes.jsx`. To determine the string value referring to the theme, check the selectTheme function at `/{project_root}/src/utilities/themeselector.jsx`.
 
-## Adding Theme Templates 
+## Adding Theme Templates
 
-1. Add new themes at `/{project_root}/src/styles/themes/themes.jsx` and use previous themes as a template to create/add your own. 
+1. Add new themes at `/{project_root}/src/styles/themes/themes.jsx` and use previous themes as a template to create/add your own.
 
 2. After adding the theme, update the selectTheme function in `/{project_root}/src/utilities/themeselector.jsx` to return the new theme depending on a specific string value.
 
 ## Link to Google Analytics
 
-Linking Quicklinks to Google Analytics is pretty straightforward. Once you create a GA4 Data Stream on the Google Analytics website, find the Measurement ID. There are two ways to link to Google Analytics depending on whether a Docker container is used. 
+Linking Quicklinks to Google Analytics is pretty straightforward. Once you create a GA4 Data Stream on the Google Analytics website, find the Measurement ID. There are two ways to link to Google Analytics depending on whether a Docker container is used.
 
 ### Without Docker Container
-Replace all instances of `${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}` in the code with the GA4 Measurement ID. 
+
+Replace all instances of `${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}` in the code with the GA4 Measurement ID.
 
 ### With Docker Container
-In `/{project_root}/Dockerfile` and `/{project_root}/Dockerfile.dev`, replace instances of `G-XXXXXXXXXX` with the GA4 Measurement ID. 
+
+In `/{project_root}/Dockerfile` and `/{project_root}/Dockerfile.dev`, replace instances of `G-XXXXXXXXXX` with the GA4 Measurement ID.
 
 ## Hosting your Quicklinks
 
-Coming soon. 
+Coming soon.
 
 ## Contributing
 
-Coming soon. 
+Coming soon.
