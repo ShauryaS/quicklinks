@@ -102,12 +102,12 @@ To customize your Quicklinks page, edit the file `/{project_root}/src/data/quick
     },
     {
       "name": "Github",
-      "link": "https://github.com/ShauryaS",
+      "link": "https://github.com/",
       "image": "/icons/github.svg"
     },
     {
       "name": "Medium",
-      "link": "https://medium.shauryas.io/",
+      "link": "https://medium.com/",
       "image": "/icons/medium.svg"
     }
   ],
