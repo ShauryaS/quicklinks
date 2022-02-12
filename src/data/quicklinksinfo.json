@@ -1,0 +1,27 @@
+{
+  "name": "Your Name",
+  "image": "/images/default-profile.png",
+  "quicklinks_data": [
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/",
+      "image": "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/linkedin.svg"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/",
+      "image": "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/instagram.svg"
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/ShauryaS",
+      "image": "/icons/github.svg"
+    },
+    {
+      "name": "Medium",
+      "link": "https://medium.shauryas.io/",
+      "image": "/icons/medium.svg"
+    }
+  ],
+  "theme": "dark"
+}

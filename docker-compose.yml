@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+  prod:
+    ports:
+      - 3000:3000
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: prod
+    restart: always
+    volumes:
+      - /app/prod
+      - /app/prod/node_modules
+      - /app/prod/.next
+  dev:
+    ports:
+      - 3000:3000
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    container_name: dev
+    restart: always
+    volumes:
+      - ./:/app/dev
+      - /app/dev/node_modules
+      - /app/dev/.next
