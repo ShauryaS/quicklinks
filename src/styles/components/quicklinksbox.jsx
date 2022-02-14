@@ -38,13 +38,13 @@ export const QuickLinksHeaderDiv = styled(Div)`
 
 export const QuickLinksItemsDiv = styled(Div)`
   width: 100%;
-  height: 68rem;
+  height: 64rem;
   overflow-y: auto;
 `
 
 export const QuickLinksCopyrightDiv = styled(Div)`
   width: 100%;
-  height: 4rem;
+  height: 8rem;
   display: flex;
   text-align: center;
   position: relative;
