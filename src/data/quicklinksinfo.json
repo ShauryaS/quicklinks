@@ -1,6 +1,7 @@
 {
   "name": "Your Name",
   "image": "/images/default-profile.png",
+  "personal_site": "https://github.com/ShauryaS/quicklinks",
   "quicklinks_data": [
     {
       "name": "LinkedIn",

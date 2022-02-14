@@ -66,7 +66,9 @@ function QuickLinksBox() {
           <QuickLinksContentsDiv>
             <QuickLinksHeaderDiv>
               <MainImageSection>
-                <MainImageDiv>
+                <MainImageDiv
+                  onClick={() => goToLink(quickLinksInfo.personal_site)}
+                >
                   <Image
                     src={quickLinksInfo.image}
                     blurDataURL={quickLinksInfo.image}
@@ -79,7 +81,9 @@ function QuickLinksBox() {
                 </MainImageDiv>
               </MainImageSection>
               <NameDiv>
-                <Name>{quickLinksInfo.name}</Name>
+                <Name onClick={() => goToLink(quickLinksInfo.personal_site)}>
+                  {quickLinksInfo.name}
+                </Name>
               </NameDiv>
             </QuickLinksHeaderDiv>
             <QuickLinksItemsDiv>

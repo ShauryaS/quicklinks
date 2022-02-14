@@ -90,6 +90,7 @@ To customize your Quicklinks page, edit the file `/{project_root}/src/data/quick
 {
   "name": "Your Name",
   "image": "/images/default-profile.png",
+  "personal_site": "",
   "quicklinks_data": [
     {
       "name": "LinkedIn",
@@ -121,9 +122,10 @@ To customize your Quicklinks page, edit the file `/{project_root}/src/data/quick
 ```
 "name": {your name},
 "image": /images/{your image name},
+"personal_site": {url to personal/portfolio site or any website},
 ```
 
-Fill the value of the **name** key with your name and the value of the **image** key with the path pointing to your image. Place all images at the `/{project_root}/public/images` folder.
+Fill the value of the **name** key with your name, the value of the **image** key with the path pointing to your image, and the value of **personal_site** key with the url to a personal/portfolio website or any website of your choice. Place all images at the `/{project_root}/public/images` folder.
 
 ### QuickLinks Data
 

@@ -6,7 +6,15 @@ export function selectTheme(themeName) {
       return themes.dark
     case 'light':
       return themes.light
+    case 'darkbluegray':
+      return themes.darkbluegray
+    case 'bluepurplegradient':
+      return themes.bluepurplegradient
+    case 'periwinklegray':
+      return themes.periwinklegray
+    case 'deepperiwinkle':
+      return themes.deepperiwinkle
     default:
-      return null
+      return themes.dark
   }
 }
