@@ -1,3 +1,23 @@
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+
+[![Stargazers][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Apache License 2.0][license-shield]][license-url]
+
+[![Issues][issues-shield]][issues-url]
+[![Bugs Open][bugs-open-shield]][bugs-open-url]
+[![Bugs Closed][bugs-closed-shield]][bugs-closed-url]
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 # Quicklinks-Next
 
 <!-- TABLE OF CONTENTS -->
@@ -11,6 +31,8 @@
     <li><a href="#5-hosting-your-quicklinks">Hosting Your Quicklinks</a></li>
     <li><a href="#6-contributing">Contributing</a></li>
     <li><a href="#7-license">License</a></li>
+    <li><a href="#8-star-history">Star History</a></li>
+    <li><a href="#9-contributors">Contributors</a></li>
   </ol>
 </details>
 
@@ -200,5 +222,35 @@ You can read more details about adding a feature in our [CONTRIBUTING GUIDELINES
 
 ## 7. License
 
-Distributed under the MIT License. See
+Distributed under the Apache License 2.0. See
 [LICENSE](https://github.com/ShauryaS/quicklinks/blob/quicklinks-next/LICENSE) for more information.
+
+## 8. Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ShauryaS/quicklinks&type=Date)](https://star-history.com/#ShauryaS/quicklinks&Date)
+
+## 9. Contributors
+
+<a href="https://github.com/ShauryaS/quicklinks/graphs/contributors">
+   <img src="https://contributors-img.web.app/image?repo=ShauryaS/quicklinks" width="600"/>
+</a>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/ShauryaS/quicklinks.svg?style=for-the-badge
+[contributors-url]: https://github.com/ShauryaS/quicklinks/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ShauryaS/quicklinks.svg?style=for-the-badge
+[forks-url]: https://github.com/ShauryaS/quicklinks/network/members
+[stars-shield]: https://img.shields.io/github/stars/ShauryaS/quicklinks.svg?style=for-the-badge
+[stars-url]: https://github.com/ShauryaS/quicklinks/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ShauryaS/quicklinks.svg?style=for-the-badge&color=blue
+[issues-url]: https://github.com/ShauryaS/quicklinks/issues
+[bugs-open-shield]: https://img.shields.io/github/issues/ShauryaS/quicklinks/bug.svg?style=for-the-badge&color=yellow
+[bugs-open-url]: https://github.com/ShauryaS/quicklinks/issues?q=is%3Aissue+label%3Abug+is%3Aopen
+[bugs-closed-shield]: https://img.shields.io/github/issues-closed/ShauryaS/quicklinks/bug.svg?style=for-the-badge&color=success
+[bugs-closed-url]: https://github.com/ShauryaS/quicklinks/issues?q=is%3Aissue+label%3Abug+is%3Aclosed
+[license-shield]: https://img.shields.io/github/license/ShauryaS/quicklinks.svg?style=for-the-badge
+[license-url]: https://github.com/ShauryaS/quicklinks/blob/quicklinks-next/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/shauryas481
