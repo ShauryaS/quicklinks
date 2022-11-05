@@ -232,7 +232,7 @@ Distributed under the Apache License 2.0. See
 ## 9. Contributors
 
 <a href="https://github.com/ShauryaS/quicklinks/graphs/contributors">
-   <img src="https://contributors-img.web.app/image?repo=ShauryaS/quicklinks" width="600"/>
+   <img src="https://contributors-img.web.app/image?repo=ShauryaS/quicklinks" width="40"/>
 </a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
