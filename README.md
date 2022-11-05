@@ -1,15 +1,31 @@
 # Quicklinks-Next
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li> <a href="#1-about">About</a> </li>
+    <li><a href="#2-getting-started">Getting Started</a></li>
+    <li><a href="#3-customizing-data">Customizing Data</a></li>
+    <li><a href="#4-adding-theme-templates">Adding Theme Templates</a></li>
+    <li><a href="#5-hosting-your-quicklinks">Hosting Your Quicklinks</a></li>
+    <li><a href="#6-contributing">Contributing</a></li>
+    <li><a href="#7-license">License</a></li>
+  </ol>
+</details>
+
+## 1. About
+
 This open source project is an alternative to the popular Linktree. Quicklinks is a one-stop website template for people to have quick access to your other socials and important links. Made with Nextjs and containerized with Docker. Google analytics integration is available.
 
-## Getting Started
+## 2. Getting Started
 
 ### Download the Code
 
 Option 1: Clone this repository using the command below:
 
 ```
-git clone https://github.com/ShauryaS/quicklinks.git
+gh repo clone ShauryaS/quicklinks
 ```
 
 Option 2: Download this repository as a zip file.
@@ -24,28 +40,22 @@ Once you get the code on your machine, execute `git checkout quicklinks-next` to
 
 2. Execute command: `npm run dev` to view the Quicklinks page in your browser at [localhost:3000](http://localhost:3000/).
 
-To run the dev env using docker, execute command: `sh commands/run_container.sh`. When the script requests the name of the container to run, enter: `dev`. View the Quicklinks page in your browser at [localhost:3000](http://localhost:3000/).
+To run the dev env using docker, ensure Docker Desktop is running on your dev machine and execute command: `npm run docker-dev`. View the Quicklinks page in your browser at [localhost:3000](http://localhost:3000/).
 
 Example terminal view for running dev Docker container:
 
 ```
-> sh commands/run_container.sh
-Enter container name (dev or prod): dev
-executing command: docker-compose up -d dev
-docker-compose up -d dev
+npm run docker-dev
 ```
 
 **The Docker dev env has fast refresh enabled.**
 
-To shut down the Docker dev container, execute command: `sh commands/stop_container.sh`. When the script requests the name of the container to stop, enter: `dev`.
+To shut down the Docker dev container, execute command: `npm run docker-stop`.
 
 Example terminal view for stopping dev Docker container:
 
 ```
-> sh commands/stop_container.sh
-Enter container name (dev or prod): dev
-executing command: docker-compose stop dev
-docker-compose stop dev
+npm run docker-stop
 ```
 
 ### Run the Code in the Prod Env and View in Browser
@@ -56,33 +66,27 @@ docker-compose stop dev
 
 3. Execute the code by running command: `npm start` to view the Quicklinks page in your browser at [localhost:3000](http://localhost:3000/).
 
-To run the dev env using docker, execute command: `sh commands/run_container.sh`. When the script requests the name of the container to run, enter: `prod`. View the Quicklinks page in your browser at [localhost:3000](http://localhost:3000/).
+To run the dev env using docker, ensure Docker Desktop is running on your dev machine and execute command: `npm run docker-prod`. View the Quicklinks page in your browser at [localhost:3000](http://localhost:3000/).
 
 Example terminal view for running prod Docker container:
 
 ```
-> sh commands/run_container.sh
-Enter container name (dev or prod): prod
-executing command: docker-compose up -d prod
-docker-compose up -d prod
+npm run docker-prod
 ```
 
 **The Docker prod env DOES NOT have fast refresh enabled.**
 
-To shut down the Docker prod container, execute command: `sh commands/stop_container.sh`. When the script requests the name of the container to stop, enter: `prod`.
+To shut down the Docker prod container, execute command: `npm run docker-stop`.
 
 Example terminal view for stopping dev Docker container:
 
 ```
-> sh commands/stop_container.sh
-Enter container name (dev or prod): prod
-executing command: docker-compose stop prod
-docker-compose stop prod
+npm run docker-stop
 ```
 
-## Customizing Data
+## 3. Customizing Data
 
-To customize your Quicklinks page, edit the file `/{project_root}/src/data/quicklinksinfo.json`. Use the current file as a template/guidline to customize your own Quicklinks page.
+To customize your Quicklinks page, edit the file [quicklinksinfo.json](/src/data/quicklinksinfo.json). Use the current file as a template/guidline to customize your own Quicklinks page.
 
 ### Template
 
@@ -125,7 +129,7 @@ To customize your Quicklinks page, edit the file `/{project_root}/src/data/quick
 "personal_site": {url to personal/portfolio site or any website},
 ```
 
-Fill the value of the **name** key with your name, the value of the **image** key with the path pointing to your image, and the value of **personal_site** key with the url to a personal/portfolio website or any website of your choice. Place all images at the `/{project_root}/public/images` folder.
+Fill the value of the **name** key with your name, the value of the **image** key with the path pointing to your image, and the value of **personal_site** key with the url to a personal/portfolio website or any website of your choice. Place all images at the [images](/public/images) folder.
 
 ### QuickLinks Data
 
@@ -142,7 +146,7 @@ Fill the value of the **name** key with your name, the value of the **image** ke
 
 Quicklinks data is an array of objects representing a link. Fill the value of the **name** key with the name of the link, the value of the **link** key with the url of the link, and the value of the **image** key with the path or url pointing to the icon for the link.
 
-All icons for each link must be an SVG format. Place all SVG icons for each link at the `/{project_root}/public/icons` folder.
+All icons for each link must be an SVG format. Place all SVG icons for each link at the [icons](/public/icons) folder.
 
 ### Theme
 
@@ -150,13 +154,13 @@ All icons for each link must be an SVG format. Place all SVG icons for each link
 "theme": {theme name}
 ```
 
-Fill the value of the **theme** key in the json with the name of the theme that should be applied to Quicklinks. The list of themes can be found in `/{project_root}/src/styles/themes/themes.jsx`. To determine the string value referring to the theme, check the selectTheme function at `/{project_root}/src/utilities/themeselector.jsx`.
+Fill the value of the **theme** key in the json with the name of the theme that should be applied to Quicklinks. The list of themes can be found in [themes.jsx](/src/styles/themes/themes.jsx). To determine the string value referring to the theme, check the selectTheme function at [themeselector.jsx](/src/utilities/themeselector.jsx).
 
-## Adding Theme Templates
+## 4. Adding Theme Templates
 
-1. Add new themes at `/{project_root}/src/styles/themes/themes.jsx` and use previous themes as a template to create/add your own.
+1. Add new themes at [themes.jsx](/src/styles/themes/themes.jsx) and use previous themes as a template to create/add your own.
 
-2. After adding the theme, update the selectTheme function in `/{project_root}/src/utilities/themeselector.jsx` to return the new theme depending on a specific string value.
+2. After adding the theme, update the selectTheme function in [themeselector.jsx](/src/utilities/themeselector.jsx) to return the new theme depending on a specific string value.
 
 ## Link to Google Analytics
 
@@ -168,12 +172,33 @@ Replace all instances of `${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}` in the co
 
 ### With Docker Container
 
-In `/{project_root}/Dockerfile` and `/{project_root}/Dockerfile.dev`, replace instances of `G-XXXXXXXXXX` with the GA4 Measurement ID.
+In [Dockerfile](/Dockerfile) and [Dockerfile.dev](Dockerfile.dev), replace instances of `G-XXXXXXXXXX` with the GA4 Measurement ID.
 
-## Hosting your Quicklinks
-
-Coming soon.
-
-## Contributing
+## 5. Hosting your Quicklinks
 
 Coming soon.
+
+## 6. Contributing
+
+There are two main ways of contributing to this project. (Hopefully you have starred the project by now ⭐️)
+
+**BECOME A CONTRIBUTOR**
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Code up your feature or contribution.
+4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+5. Push to your Branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
+
+You can read more details about adding a feature in our [CONTRIBUTING GUIDELINES](/CONTRIBUTING.md).
+
+**RAISE AN ISSUE OR REQUEST A FEATURE**
+
+- Raise an issue by opening a [bug ticket](https://github.com/ShauryaS/quicklinks/issues).
+- Request a new feature through a [feature request ticket](https://github.com/ShauryaS/quicklinks/issues).
+
+## 7. License
+
+Distributed under the MIT License. See
+[LICENSE](https://github.com/ShauryaS/quicklinks/blob/quicklinks-next/LICENSE) for more information.

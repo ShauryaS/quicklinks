@@ -5,7 +5,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-dev": "docker-compose up -d dev",
+    "docker-prod": "docker-compose up -d prod",
+    "docker-stop": "docker-compose stop dev prod",
+    "docker-reset": "docker-compose down --rmi all -v"
   },
   "dependencies": {
     "next": "12.0.10",
