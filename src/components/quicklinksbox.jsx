@@ -98,7 +98,8 @@ function QuickLinksBox() {
             </QuickLinksItemsDiv>
             <QuickLinksCopyrightDiv>
               <CopyrightText>
-                &copy; 2022, {quickLinksInfo.name}. All rights reserved.
+                &copy; {new Date().getFullYear()}, {quickLinksInfo.name}. All
+                rights reserved.
                 <br />
                 <br />
                 Quicklinks template from{' '}
