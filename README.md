@@ -256,3 +256,7 @@ Distributed under the Apache License 2.0. See
 [license-url]: https://github.com/ShauryaS/quicklinks/blob/quicklinks-next/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/shauryas481
+
+## 10. Examples
+
+[shaurya's quicklinks](https://quicklinks.shauryas.io)
