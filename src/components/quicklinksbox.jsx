@@ -1,4 +1,7 @@
 import React from 'react'
+import { useTheme } from 'styled-components'
+
+import EditorialBox from '@/components/editorialbox'
 
 import {
   QuickLinksDiv,
@@ -53,6 +56,14 @@ function QuickLinksItem(props) {
 }
 
 function QuickLinksBox() {
+  const theme = useTheme()
+
+  // The editorial theme uses a distinct minimal layout; every other theme keeps
+  // the classic card layout below unchanged.
+  if (theme && theme.variant === 'editorial') {
+    return <EditorialBox />
+  }
+
   const data = quickLinksInfo.quicklinks_data
 
   function goToLink(url) {

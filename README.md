@@ -117,8 +117,15 @@ To customize your Quicklinks page, edit the file [quicklinksinfo.json](/src/data
 ```
 {
   "name": "Your Name",
+  "wordmark": "yoursite.com",
   "image": "/images/default-profile.png",
   "personal_site": "",
+  "role": {
+    "title": "Your Role",
+    "company": "Company",
+    "companyUrl": "https://example.com/"
+  },
+  "meta": "What you do · Where you are",
   "quicklinks_data": [
     {
       "name": "LinkedIn",
@@ -179,6 +186,10 @@ All icons for each link must be an SVG format. Place all SVG icons for each link
 ```
 
 Fill the value of the **theme** key in the json with the name of the theme that should be applied to Quicklinks. The list of themes can be found in [themes.jsx](/src/styles/themes/themes.jsx). To determine the string value referring to the theme, check the selectTheme function at [themeselector.jsx](/src/utilities/themeselector.jsx).
+
+#### The `editorial` theme
+
+Setting `"theme": "editorial"` swaps the classic card layout for a minimal, typographic one — an identity header (photo, wordmark, name, role, meta) above a list of bordered link rows. Unlike the other themes, it is **token-driven**: its palette lives as CSS variables in [globals.css](/src/styles/css/globals.css) and follows the visitor's OS light/dark preference automatically. It also reads three optional fields from the JSON above — `wordmark`, `role` (`title` / `company` / `companyUrl`), and `meta` — to fill the header. Edit the palette in one place (the `:root` blocks in globals.css) and the whole theme follows.
 
 ## 4. Adding Theme Templates
 

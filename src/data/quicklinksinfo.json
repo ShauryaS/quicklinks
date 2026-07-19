@@ -1,7 +1,15 @@
 {
   "name": "Your Name",
+  "wordmark": "yoursite.com",
   "image": "/images/default-profile.png",
   "personal_site": "https://github.com/ShauryaS/quicklinks",
+  "role":
+  {
+    "title": "Your Role",
+    "company": "Company",
+    "companyUrl": "https://example.com/"
+  },
+  "meta": "What you do · Where you are",
   "quicklinks_data": [
     {
       "name": "LinkedIn",

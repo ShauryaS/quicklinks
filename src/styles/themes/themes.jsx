@@ -123,3 +123,30 @@ export const deepperiwinkle = {
     copyrightFontColor: '#fff',
   },
 }
+
+/*
+ * "editorial" is a token-driven theme: instead of hard-coded colors it reads
+ * the CSS variables in globals.css, so it follows the OS light/dark preference
+ * automatically. The `variant` flag tells the components to render the minimal
+ * editorial treatment (bordered rows, mono labels, ↗ affordances) instead of
+ * the classic card layout. It reads the optional `wordmark`, `role`, and `meta`
+ * fields from quicklinksinfo.json for the identity header.
+ */
+export const editorial = {
+  variant: 'editorial',
+  main_page: {
+    bgColor: 'var(--bg)',
+    bgImage: 'none',
+  },
+  quicklinks_box: {
+    nameFontColor: 'var(--ink)',
+    ink: 'var(--ink)',
+    muted: 'var(--muted)',
+    faint: 'var(--faint)',
+    line: 'var(--line)',
+    accent: 'var(--accent)',
+    accentWeak: 'var(--accent-weak)',
+    mono: 'var(--mono)',
+    copyrightFontColor: 'var(--faint)',
+  },
+}

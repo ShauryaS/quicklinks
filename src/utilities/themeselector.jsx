@@ -14,6 +14,8 @@ export function selectTheme(themeName) {
       return themes.periwinklegray
     case 'deepperiwinkle':
       return themes.deepperiwinkle
+    case 'editorial':
+      return themes.editorial
     default:
       return themes.dark
   }
