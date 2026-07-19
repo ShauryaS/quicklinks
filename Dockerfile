@@ -23,12 +23,14 @@ ENV NODE_ENV production
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
 
-# You only need to copy next.config.js if you are NOT using the default configuration
-COPY --from=builder /app/prod/next.config.js ./
-COPY --from=builder /app/prod/public ./public
+# You only need to copy next.config.js if you are NOT using the default configuration.
+# Chown everything to the non-root runtime user so it can read the files even
+# when the build context has restrictive (owner-only) source permissions.
+COPY --from=builder --chown=nextjs:nodejs /app/prod/next.config.js ./
+COPY --from=builder --chown=nextjs:nodejs /app/prod/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/prod/.next ./.next
-COPY --from=builder /app/prod/node_modules ./node_modules
-COPY --from=builder /app/prod/package.json ./package.json
+COPY --from=builder --chown=nextjs:nodejs /app/prod/node_modules ./node_modules
+COPY --from=builder --chown=nextjs:nodejs /app/prod/package.json ./package.json
 
 USER nextjs
 

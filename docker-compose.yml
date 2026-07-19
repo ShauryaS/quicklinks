@@ -9,10 +9,6 @@ services:
       dockerfile: Dockerfile
     container_name: prod
     restart: always
-    volumes:
-      - /app/prod
-      - /app/prod/node_modules
-      - /app/prod/.next
   dev:
     ports:
       - 3000:3000
